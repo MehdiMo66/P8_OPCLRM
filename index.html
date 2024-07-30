@@ -35,18 +35,38 @@
    
   </head>
   <body>
-    <div itemscope itemtype="https://schema.org/LocalBusiness">
-      <div itemprop="name">Nina Carducci</div>
-      <div>Phone: <span itemprop="telephone">05 56 67 78 89</span></div>
-    
-      <div itemprop="paymentAccepted"  style='display: none' >cash, check, credit card, invoice, paypal</div>
-      <meta itemprop="openingHours"  style='display: none'  datetime="Mo,Tu,We,Th,Fr 10:00-21:00" />
-      <div itemtype="http://schema.org/PostalAddress" itemscope="" itemprop="address">
-        <div itemprop="streetAddress">68 avenue Alsace-Lorraine</div>
-        <div><span itemprop="addressLocality">Bordeaux</span>, <span itemprop="addressRegion"></span> <span itemprop="postalCode"> 33200 </span></div>
-      </div>
-    </div>
-    
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "OnlineBusiness",
+        "name": "Nina Carducci",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "addressRegion": "",
+          "postalCode": " 33200 "
+        },
+        "image": "https://mehdimo66.github.io/P8_OPCLRM/assets/images/nina.webp",
+        "telePhone": "05 56 67 78 89",
+        "paymentAccepted": [ "cash", "check", "credit card", "invoice", "paypal" ],
+        "openingHours": "Mo,Tu,We,Th,Fr 10:00-21:00",
+        "openingHoursSpecification": [ {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "10:00",
+          "closes": "21:00"
+        } ],
+        "priceRange":"$$"
+      
+      }
+      </script>
     <header>
       <h1>Nina Carducci</h1>
       <nav>
